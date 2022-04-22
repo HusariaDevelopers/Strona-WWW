@@ -507,3 +507,44 @@ height: 60%;
 
 
 
+.games{
+    position: relative;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+.games .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .games{
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+}
+body.dark .contact .text{
+    color: var(--text-color);
+}
+
+
+.games .box{
+    font-size: 15px;
+    font-weight: 125;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    padding: 5px 5px;
+    height:400px;
+    width:400px;
+    padding-bottom:2%;
+    border-radius: 15px
+}
+
+.games .box .title {
+padding: 5px 5px;
+}
