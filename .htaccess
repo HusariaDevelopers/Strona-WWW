@@ -1,22 +1,18 @@
-<Files script.js>
-order allow,deny
-deny from all
-</Files>
-
-<Files style.css>
-order allow,deny
-deny from all
-</Files>
-
 # Custom 404 errors
 ErrorDocument 404 404.html
-
 # Prevent viewing of .htaccess file
 <Files .htaccess>
 order allow,deny
 deny from all
 </Files>
-
+#JS I CSS
+<Files ~ "\.js$">
+    order allow,deny
+    deny from all
+</Files>
+<Files ~ "\.css$">
+    order allow,deny
+    deny from all
+</Files>
 # Prevent directory listings
 Options All -Indexes
-
